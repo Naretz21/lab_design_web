@@ -1,2 +1,3 @@
-# DesingZegel2
-Curso de diseño web Zegel
+# Piedra Luna Resort
+Curso de laboratorio - diseño web 
+Institución - Zegel
