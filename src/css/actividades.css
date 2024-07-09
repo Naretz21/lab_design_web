@@ -1,0 +1,32 @@
+body{
+    background-color: white;
+}
+
+h2
+{
+    font-size: 64;
+}
+
+.description{
+    font: inherit;
+    font-size: 64;
+}
+
+.elements{
+    display: flex;
+}
+
+.content{
+    display: inline;
+    padding: 5%;
+}
+
+.image{
+    width: 50%;
+    height: auto;
+}
+
+.link{
+    font-size: 22;
+    color: black;
+}
