@@ -7,9 +7,6 @@ h2
     font-size: 64;
 }
 
-h3{
-    text-align: center;
-}
 
 .description{
     font: inherit;
@@ -18,14 +15,24 @@ h3{
 
 
 .elements-img{
-    width: 50%;
-    height: 200;
-    object-fit: cover;
+    max-height: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 .content{
-    display: inline;
-    padding: 5px;
+    padding: 50px;
+    @media (width <= 768px) {
+        text-align: center;
+    }
+}
+.content-r{
+    padding: 50px;
+    text-align: right;
+    @media (width <= 768px) {
+        text-align: center;
+    }
+
 }
 
 .link{
@@ -43,7 +50,7 @@ h3{
     margin: 0;
 }
 .banner-img{
-    height: 300px;
+    max-height: 300px;
     width: 100%;
     object-fit: cover;
 }
@@ -57,5 +64,5 @@ h3{
 }
 
 .elements{
-    display: flex;
+    align-items: center;
 }
