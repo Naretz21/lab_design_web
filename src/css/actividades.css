@@ -25,6 +25,7 @@ h2
     padding-right: 30px;
     @media (width <= 768px) {
         text-align: center;
+        padding: 50px;
     }
 }
 .content-r{
