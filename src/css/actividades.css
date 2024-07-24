@@ -18,6 +18,7 @@ h2
     max-height: 500px;
     max-width: 100%;
     height: auto;
+    object-fit: cover;
 }
 
 .content{
