@@ -7,10 +7,6 @@ h2
     font-size: 64;
 }
 
-h3{
-    text-align: center;
-}
-
 .description{
     font: inherit;
     font-size: 64;
@@ -18,16 +14,29 @@ h3{
 
 
 .elements-img{
-    width: 50%;
-    height: 200;
-    object-fit: cover;
+    max-height: 500px;
+    max-width: 100%;
+    height: auto;
 }
 
 .content{
-    display: inline;
-    padding: 5px;
+    padding-top: 50px;
+    padding-right: 30px;
+    @media (width <= 768px) {
+        text-align: center;
+    }
 }
+.content-r{
+    padding-top: 50px;
+    padding-right: 30px;
+    padding-left: 80px;
+    text-align: right;
+    @media (width <= 768px) {
+        text-align: center;
+        padding: 50px;
+    }
 
+}
 .link{
     font-size: 22;
     color: black;
@@ -57,6 +66,5 @@ h3{
 }
 
 .elements{
-    display: flex;
-    text-align: justify;
+    align-items: center;
 }
