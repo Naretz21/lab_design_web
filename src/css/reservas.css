@@ -1,76 +1,93 @@
-body{
+body {
     background-color: white;
 }
 
-h2
-{
+h2 {
     font-size: 64;
 }
 
-.description{
+.navbar .navbar-light {
+    position: fixed;
+
+}
+
+.navbar li {
+    font-family: var(--enlaces);
+    font-size: 1.2rem;
+}
+
+.description {
     font: inherit;
     font-size: 64;
 }
 
 
-.elements-img{
+.elements-img {
     max-height: 500px;
     max-width: 100%;
     height: auto;
     object-fit: cover;
     position: relative;
 }
-.elements-icon{
+
+.elements-icon {
     position: absolute;
     vertical-align: center;
     max-height: 200px;
-    @media (width <= 768px) {
+
+    @media (width <=768px) {
         vertical-align: top;
         min-height: 300px;
         align-self: start;
         padding-top: 30%;
     }
 }
-.elements-img-r{
+
+.elements-img-r {
     max-height: 500px;
     max-width: 100%;
     height: auto;
     object-fit: cover;
     position: relative;
 }
-.elements-icon-r{
+
+.elements-icon-r {
     position: absolute;
     vertical-align: center;
     align-self: right;
     max-height: 200px;
-    
+
 }
 
-.content{
+.content {
     padding-top: 50px;
     padding-right: 30px;
-    @media (width <= 768px) {
+
+    @media (width <=768px) {
         text-align: center;
     }
 }
-.content-r{
+
+.content-r {
     padding-top: 50px;
     padding-right: 30px;
     padding-left: 80px;
     text-align: right;
-    @media (width <= 768px) {
+
+    @media (width <=768px) {
         text-align: center;
         padding: 50px;
     }
 
 }
-.link{
+
+.link {
     font-size: 22;
     color: black;
     text-align: center;
 }
 
-.banner{
+.banner {
     width: 100%;
     height: 300px;
     position: relative;
@@ -78,12 +95,14 @@ h2
     text-align: center;
     margin: 0;
 }
-.banner-img{
+
+.banner-img {
     height: 300px;
     width: 100%;
     object-fit: cover;
 }
-.banner-text{
+
+.banner-text {
     position: absolute;
     top: 50%;
     left: 50%;
@@ -92,6 +111,27 @@ h2
     text-transform: capitalize;
 }
 
-.elements{
+.elements {
     align-items: center;
+}
+
+.footer-icons i {
+    color: black;
+}
+
+.footer-copy p {
+    color: #969696;
+    font-family: var(--parrafos);
+}
+
+.footer-container h5 {
+    font-family: var(--titles);
+    font-weight: bolder;
+}
+
+.footer-newsletter .form-control::placeholder {
+    color: #969696;
+    font-style: italic;
+    font-family: var(--enlaces);
+    letter-spacing: 1px;
 }

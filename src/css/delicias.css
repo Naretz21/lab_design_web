@@ -3,11 +3,13 @@
     text-align: center;
     color: white;
 }
+
 .banner img {
     height: 300px;
     width: 100%;
     object-fit: cover;
 }
+
 .banner-text {
     position: absolute;
     top: 50%;
@@ -29,4 +31,35 @@
 .img-fluid {
     max-width: 100%;
     height: auto;
+}
+
+.navbar .navbar-light {
+    position: fixed;
+
+}
+
+.navbar li {
+    font-family: var(--enlaces);
+    font-size: 1.2rem;
+}
+
+.footer-icons i {
+    color: black;
+}
+
+.footer-copy p {
+    color: #969696;
+    font-family: var(--parrafos);
+}
+
+.footer-container h5 {
+    font-family: var(--titles);
+    font-weight: bolder;
+}
+
+.footer-newsletter .form-control::placeholder {
+    color: #969696;
+    font-style: italic;
+    font-family: var(--enlaces);
+    letter-spacing: 1px;
 }
