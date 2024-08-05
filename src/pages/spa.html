@@ -3,11 +3,104 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Banner con Título</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        .banner {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+        .banner .title {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 2.5em;
+            font-weight: bold;
+        }
+
+        .banner {
+            position: relative;
+            text-align: center;
+            color: white;
+        }
+        .banner img {
+            width: 100%;
+            height: auto;
+        }
+        .banner .title-container {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            text-align: center;
+        }
+        .content {
+            margin: 20px 0;
+        }
+        .details {
+            margin-top: 20px;
+        }
+    </style>
 </head>
 <body>
-    <div>
-        
+    <div class="container'lg">
+        <div class="banner">
+            <img src="/lab_design_web/src/img/webp/Spa/banner.jpg" alt="Banner Image">
+            <div class="title">Spa</div>
+        </div>
+        <br>
+        <br>
+        <div class="title-container d-flex justify-content-center align-items-center flex-column">
+            <h1>Spa Killa Mayu</h1>
+            <p class="content col-6">
+                Los tratamientos relajantes en los que se emplean productos locales reflejan el espíritu sereno de nuestro entorno natural. 
+                Al abrigo de árboles autóctonos y rodeado de flores salvajes, el Spa Killa Mayu se ubica en un bello complejo de piedras y madera. 
+                Seleccione un masaje o un tratamiento de nuestro exclusivo menú y garantice un inicio sublime a su aventura en Piedra Luna Resort. 
+                Disfrute de la tranquilidad y revitalícese en un santuario diseñado para ofrecerle una experiencia de bienestar completa. 
+                Sumérjase en un oasis de paz y deje que nuestros expertos terapeutas cuiden de usted.
+            </p>
+            <br>
+            <a href="#">DESCARGAR FOLLETO</a>
+        </div>
     </div>
+    <div class="details">
+        <h2>Detalles e Instalaciones</h2>
+        <div class="row">
+            <div>
+                
+            </div class=" center">
+            <div class="col-md-6">
+                <ul>
+                    <li>Dos salas de tratamiento individual</li>
+                    <li>Sala de tratamiento para parejas</li>
+                    <li>Jacuzzi interior y exterior</li>
+                    <li>Sala de vapor mixta</li>
+                    <li>Ducha inca</li>
+                    <li>Estación con fruta, agua, y té caliente y helado</li>
+                </ul>
+            </div>
+            <div class="6">
+                <ul>
+                    <li>Abierto todos los días de 12:00 p.m. a 9:00 p.m.</li>
+                    <li>Cel.: (+51) 999 959 777</li>
+                    <li>E-mail: recepcion.plr@piedraluna.com</li>
+
+                </ul>
+            </div>
+        </div>
+    </div>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </body>
 </html>
