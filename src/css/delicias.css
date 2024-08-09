@@ -98,8 +98,7 @@ a {
   margin-bottom: 40px;
 }
 .text-section {
-  padding-left: 10%;
-  padding-right: 10%;
+  padding: 10%;
 }
 .img-fluid {
   max-width: 100dvh;
