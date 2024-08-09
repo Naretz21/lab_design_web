@@ -161,9 +161,9 @@ a {
 
 /*Sección Articulo */
 .background-act {
-    margin-bottom: 10%;
-    margin-top: 10%;
-  }
+  margin-bottom: 10%;
+  margin-top: 10%;
+}
 .img-art img {
   max-width: 150px;
   height: auto;
@@ -183,6 +183,7 @@ a {
 @media (max-width: 768px) {
   hr {
     display: none;
+
   }
   .background-act {
     background-color: var(--background);
@@ -246,27 +247,27 @@ a {
 
 /* Footer */
 .footer-icons i {
-    color: black;
+  color: var(--black);
 }
 
 .footer-copy p {
-    color: #969696;
-    font-family: var(--parrafos);
+  color: var(--grey);
+  font-family: var(--parrafos);
 }
 
 .footer-container h5 {
-    font-family: var(--titles);
-    font-weight: bolder;
+  font-family: var(--titles);
+  font-weight: bolder;
 }
 
 .footer-newsletter .form-control::placeholder {
-    color: #969696;
-    font-style: italic;
-    font-family: var(--enlaces);
-    letter-spacing: 1px;
+  color: var(--grey);
+  font-style: italic;
+  font-family: var(--enlaces);
+  letter-spacing: 1px;
 }
 
 .no-decoration {
-    text-decoration: none;
-  }
+  text-decoration: none;
+}
 /* Fin Footer */
