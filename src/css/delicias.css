@@ -47,6 +47,7 @@ a {
   top: 0 !important;
   width: 100% !important;
   z-index: 1030 !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
 .container-fluid {
   margin-right: 1% !important;
