@@ -152,4 +152,7 @@
     }
   }
   
+  .footermar{
+    z-index: 1000;
+  }
   /* Fin Footer */

@@ -119,14 +119,24 @@
 
     <!-- Intro  -->
     <section class="content container p-5">
-        <div class=" img-intro d-flex justify-content-center">
-            <!-- Imagen para vistas md y superiores -->
-            <img src="/src/img/webp/Hotel/img-intro-md.png" class="img-fluid d-none d-md-block" alt="Imagen para escritorio"  style="user-select: none;">
-          
-            <!-- Imagen para vistas inferiores a md -->
-            <img src="/src/img/webp/Hotel/img-intro-sm.png" class="img-fluid d-md-none" alt="Imagen para móvil"  style="user-select: none;">
-          </div>
-          
+      <div class="img-intro d-flex justify-content-center">
+        <!-- Imagen para vistas md y superiores -->
+        <img
+          src="/src/img/webp/Hotel/img-intro-md.png"
+          class="img-fluid d-none d-md-block"
+          alt="Imagen para escritorio"
+          style="user-select: none"
+        />
+
+        <!-- Imagen para vistas inferiores a md -->
+        <img
+          src="/src/img/webp/Hotel/img-intro-sm.png"
+          class="img-fluid d-md-none"
+          alt="Imagen para móvil"
+          style="user-select: none"
+        />
+      </div>
+
       <div class="text-intro">
         <p>
           <strong
@@ -156,6 +166,54 @@
       </div>
     </section>
     <!-- Fin Intro  -->
+
+    <section class="container mt-5 mb-5 position-relative">
+      <h2 class="text-center">Habitaciones, Suites y Villas</h2>
+
+      <div class="row mt-4 position-relative">
+        <div class="position-relative">
+          <img
+            src="/src/img/webp/Hotel/terraza-md.png"
+            alt="Habitaciones Deluxe con Terraza"
+            class="img-fluid w-100"
+          />
+        </div>
+
+
+        
+        <div
+          class="card-hotel-text col-12 text-center mt-3 position-relative bg-white"
+          style="z-index: 1"
+        >
+          <hr />
+          <h3 class="font-weight-bold">HABITACIONES DELUXE CON TERRAZA</h3>
+          <p class="text-muted">
+            Una cama king-size o dos camas individuales • Baño de mármol, gran
+            terraza privada • Tamaño: a partir de 452ft2 (42m2)
+          </p>
+          <button class="btn btn-outline-secondary">
+            INFORMACIÓN DETALLADA
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <style>
+      .card-hotel-text hr {
+        width: 100%;
+        flex-direction: row;
+        justify-content: center;
+      }
+      .card-hotel-text {
+        padding-right: 10%;
+        padding-left: 10%;
+        border: 2px solid black;
+        width: 90%;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+      }
+    </style>
 
     <!-- Footer -->
     <div class="footermar container">
@@ -244,8 +302,8 @@
     <!-- end Footer  -->
   </body>
   <script
-      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
-      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
-      crossorigin="anonymous"
-    ></script>
+    src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+    crossorigin="anonymous"
+  ></script>
 </html>
