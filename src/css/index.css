@@ -35,6 +35,10 @@ a {
   font-family: var(--enlaces);
   font-size: 1.2rem;
 }
+.navbar .navbar-light {
+  position: fixed;
+  z-index: 1000;
+}
 
 .navbar {
   position: fixed !important;
