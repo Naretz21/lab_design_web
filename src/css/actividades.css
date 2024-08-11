@@ -1,56 +1,92 @@
+/* Estilos Generales */
+:root {
+  --titles: "Bodoni Moda", serif;
+  --enlaces: "Cabin", sans-serif;
+  --parrafos: "Inter", sans-serif;
+  --black: #000000;
+  --white: #fff;
+  --grey: #969696;
+  --grey2: #d9d9d9;
+  --background: #f0f0f0;
+}
+
 body {
-  background-color: white;
+  margin: 0;
+  font-family: var(--parrafos);
 }
 
+h1,
 h2 {
-  font-size: 64;
-}
-
-.description {
-  font: inherit;
-  font-size: 64;
-}
-
-.elements-img {
-  max-height: 500px;
-  max-width: 100%;
-  height: auto;
-  object-fit: cover;
-}
-
-.content {
-  padding-top: 50px;
-  padding-right: 30px;
-
-  @media (width <=768px) {
-    text-align: center;
-    padding: 50px;
-  }
-}
-
-.content-r {
-  padding-top: 50px;
-  padding-right: 30px;
-  padding-left: 80px;
-  text-align: right;
-
-  @media (width <=768px) {
-    text-align: center;
-    padding: 50px;
-  }
-}
-
-.banner {
-  width: 100%;
-  height: 300px;
-  position: relative;
-  display: inline-block;
+  font-family: 'Bodoni MT';
+  font-size: 64px;
   text-align: center;
-  margin-top: 0;
 }
 
-.banner-img {
-  max-height: 300px;
+h3 {
+  font-family: var(--titles);
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+
+p {
+  font-family: var(--parrafos);
+}
+
+a {
+  font-family: var(--enlaces);
+}
+
+.col-md-6 {
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+/* Fin Estilos Generales */
+
+/* Navbar */
+
+.navbar li {
+  font-family: var(--enlaces);
+  font-size: 1.2rem;
+}
+
+.navbar .navbar-light {
+  position: fixed;
+  z-index: 1000;
+}
+
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 1030 !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
+}
+
+.container-fluid {
+  margin-right: 1% !important;
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
+}
+
+/* Fin Navbar */
+
+/* Banner */
+.banner {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+  margin-top: 90px;
+}
+
+.banner img {
+  height: 300px;
   width: 100%;
   object-fit: cover;
 }
@@ -60,20 +96,48 @@ h2 {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
-  text-transform: capitalize;
+  padding: 20px;
+  border-radius: 10px;
 }
 
-.elements {
-  align-items: center;
+/* Fin Banner */
+
+/* Intro */
+.text-intro {
+  margin-top: 5%;
+  margin-bottom: 10%;
 }
 
+/* Fin Intro */
+
+/* Sections */
+.content-section {
+  padding: 0;
+}
+
+.content-section h2 {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.text-section {
+  padding: 10%;
+}
+
+.img-fluid {
+  max-width: 100dvh;
+  height: auto;
+}
+
+/* Fin Sections */
+
+/* Footer */
 .footer-icons i {
-  color: black;
+  color: var(--black);
 }
 
 .footer-copy p {
-  color: #969696;
+  color: var(--grey);
   font-family: var(--parrafos);
 }
 
@@ -83,17 +147,21 @@ h2 {
 }
 
 .footer-newsletter .form-control::placeholder {
-  color: #969696;
+  color: var(--grey);
   font-style: italic;
   font-family: var(--enlaces);
   letter-spacing: 1px;
 }
 
-.navbar .navbar-light {
-  position: fixed;
+.no-decoration {
+  text-decoration: none;
 }
 
-.navbar li {
-  font-family: var(--enlaces);
-  font-size: 1.2rem;
+@media (max-width: 768px) {
+  .footermar {
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+  }
 }
+
+/* Fin Footer */
