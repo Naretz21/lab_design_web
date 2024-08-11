@@ -1,268 +1,347 @@
 <!DOCTYPE html>
 <html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Actividades</title>
-    <link rel="icon" href="./src/img/icons/favicon.ico" type="image/x-icon">
-    <link rel="stylesheet" href="/src/css/actividades.css">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
+    <link rel="icon" href="./src/img/icons/favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="/src/css/actividades.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3"
+      crossorigin="anonymous"
+    />
+    <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+      rel="stylesheet"
+    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap"
-        rel="stylesheet" />
-</head>
+      href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-
-<body>
+  <body>
     <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top col-md-9 mx-auto bg-white navbar-light">
-        <div class="container-fluid">
-          <a class="navbar-brand order-2 order-md-1" href="./index.html">
-            <img
-              src="/src/img/webp/Home/LOGO.jpg"
-              alt="Logo"
-              width="120"
-              height="auto"
-            />
-          </a>
-          <button
-            class="navbar-toggler order-1 order-md-0"
-            type="button"
-            data-bs-toggle="offcanvas"
-            data-bs-target="#offcanvasNavbar"
-            aria-controls="offcanvasNavbar"
-          >
-            <span class="navbar-toggler-icon"></span>
-          </button>
-          <div
-            class="collapse navbar-collapse order-md-2 justify-content-end ms-3"
-          >
-            <ul class="navbar-nav mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="./src/pages/hotel.html">Hotel</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="./src/pages/delicias.html">Restaurantes</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="./src/pages/spa.html">Spa</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="./src/pages/actividades.html">Actividades</a>
-              </li>
-            </ul>
-          </div>
-          <button class="btn btn-secondary order-3 ms-3" type="button" onclick="window.location.href='./src/pages/reservas.html';">
-            Reservar
-          </button>
-        </div>
-        <div
-          class="offcanvas offcanvas-start"
-          tabindex="-1"
-          id="offcanvasNavbar"
-          aria-labelledby="offcanvasNavbarLabel"
+    <nav
+      class="navbar navbar-expand-md fixed-top col-md-9 mx-auto bg-white navbar-light"
+    >
+      <div class="container-fluid">
+        <a class="navbar-brand order-2 order-md-1" href="./index.html">
+          <img
+            src="/src/img/webp/Home/LOGO.jpg"
+            alt="Logo"
+            width="120"
+            height="auto"
+          />
+        </a>
+        <button
+          class="navbar-toggler order-1 order-md-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
         >
-          <div class="offcanvas-header">
-            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-            <button
-              type="button"
-              class="btn-close"
-              data-bs-dismiss="offcanvas"
-              aria-label="Close"
-            ></button>
-          </div>
-          <div class="offcanvas-body d-md-none">
-            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-              <li class="nav-item"><a class="nav-link" href="./src/pages/hotel.html">Hotel</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="./src/pages/delicias.html">Restaurantes</a>
-              </li>
-              <li class="nav-item"><a class="nav-link" href="./src/pages/spa.html">Spa</a></li>
-              <li class="nav-item">
-                <a class="nav-link" href="./src/pages/actividades.html">Actividades</a>
-              </li>
-            </ul>
-          </div>
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="collapse navbar-collapse order-md-2 justify-content-end ms-3"
+        >
+          <ul class="navbar-nav mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/hotel.html">Hotel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/delicias.html"
+                >Restaurantes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/spa.html">Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/actividades.html"
+                >Actividades</a
+              >
+            </li>
+          </ul>
         </div>
-      </nav>
-      <!-- end Navbar -->
+        <button
+          class="btn btn-secondary order-3 ms-3"
+          type="button"
+          onclick="window.location.href='./src/pages/reservas.html';"
+        >
+          Reservar
+        </button>
+      </div>
+      <div
+        class="offcanvas offcanvas-start"
+        tabindex="-1"
+        id="offcanvasNavbar"
+        aria-labelledby="offcanvasNavbarLabel"
+      >
+        <div class="offcanvas-header">
+          <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+          <button
+            type="button"
+            class="btn-close"
+            data-bs-dismiss="offcanvas"
+            aria-label="Close"
+          ></button>
+        </div>
+        <div class="offcanvas-body d-md-none">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/hotel.html">Hotel</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/delicias.html"
+                >Restaurantes</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/spa.html">Spa</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="./src/pages/actividades.html"
+                >Actividades</a
+              >
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <!-- end Navbar -->
 
     <main class="container-fluid mt-md-3 p-0">
-        <section class="banner mt-md-3">
-            <img src="/src/img/webp/Actividades/banner.jpg" class="banner-img" alt="banner">
-            <h1 class="banner-text">Actividades</h1>
-        </section>
+      <section class="banner mt-md-3">
+        <img
+          src="/src/img/webp/Actividades/banner.jpg"
+          class="banner-img"
+          alt="banner"
+        />
+        <h1 class="banner-text">Actividades</h1>
+      </section>
 
-        <section class="row justify-content-md-center my-5">
-            <h2 class="col-12 title col-md-8 col-lg-8 text-center">
-                Descubra los secretos del Valle Sagrado
-            </h2>
-            <p class="col-12 description col-md-6 col-lg-6 text-center">
-                ¿Se pregunta qué hacer en Perú? Déjese encantar por auténticos rituales andinos, maravíllese con
-                recorridos por el Valle Sagrado o déjese llevar por la magia del río Urubamba. Una estadía en el Río
-                Sagrado ofrece infinidad de oportunidades para explorar.
-            </p>
+      <section class="row justify-content-md-center my-5">
+        <h2 class="col-12 title col-md-8 col-lg-8 text-center">
+          Descubra los secretos del Valle Sagrado
+        </h2>
+        <p class="col-12 description col-md-6 col-lg-6 text-center">
+          ¿Se pregunta qué hacer en Perú? Déjese encantar por auténticos
+          rituales andinos, maravíllese con recorridos por el Valle Sagrado o
+          déjese llevar por la magia del río Urubamba. Una estadía en el Río
+          Sagrado ofrece infinidad de oportunidades para explorar.
+        </p>
+      </section>
+      <section class="row elements">
+        <img
+          src="/src/img/webp/Actividades/alpacas.jpg"
+          class="col-12 col-md-6 elements-img"
+          alt="alimente-alpacas"
+        />
+        <section class="content col-12 col-md-6">
+          <h3 class="">Alimente a las alpacas</h3>
+          <p>
+            Lleve a sus hijos a acariciar nuestras adorables alpacas bebé y
+            ayude a darles el biberón. Esta es una gran oportunidad para
+            acercarse a una de las criaturas más icónicas y adorables de la
+            región. Todos los días a las 8 am y a las 4 pm. Sujeto a condiciones
+            climáticas.
+          </p>
+          <div class="text-center">
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >PÓNGASE EN CONTACTO CON NOSOTROS</a
+            >
+          </div>
         </section>
-        <section class="row elements">
-            <img src="/src/img/webp/Actividades/alpacas.jpg" class="col-12 col-md-6 elements-img" alt="alimente-alpacas">
-            <section class="content col-12 col-md-6">
-                <h3 class="">
-                    Alimente a las alpacas
-                </h3>
-                <p>
-                    Lleve a sus hijos a acariciar nuestras adorables alpacas bebé y ayude a darles el biberón. Esta es
-                    una gran oportunidad para acercarse a una de las criaturas más icónicas y adorables de la región.
-                    Todos los días a las 8 am y a las 4 pm. Sujeto a condiciones climáticas.
-                </p>
-                <div class="text-center">
-                    <a href="#"
-                        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">PÓNGASE
-                        EN CONTACTO CON NOSOTROS</a>
-                </div>
-            </section>
+      </section>
+      <section class="row elements">
+        <img
+          src="/src/img/webp/Actividades/picnic.jpg"
+          class="col-12 col-md-6 order-sm-1 order-md-2 elements-img"
+          alt="picnic-jardin"
+        />
+        <section class="content-r col-12 col-md-6 order-sm-2 order-md-1">
+          <h3>Picnic en el jardín</h3>
+          <p>
+            Disfrute de un almuerzo especial junto al Río Urubamba. Comience con
+            unos sabrosos bocadillos, luego continúe con una variedad de platos
+            con ingredientes locales, incluyendo de nuestro propio huerto.
+            Previa reserva con 24 horas de anticipación. Para grupos de mínimo 2
+            y máximo 14 personas.
+          </p>
+          <div class="text-center">
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >PÓNGASE EN CONTACTO CON NOSOTROS</a
+            >
+          </div>
         </section>
-        <section class="row elements">
-            <img src="/src/img/webp/Actividades/picnic.jpg" class="col-12 col-md-6 order-sm-1 order-md-2 elements-img"
-                alt="picnic-jardin">
-            <section class="content-r col-12 col-md-6 order-sm-2 order-md-1">
-                <h3>
-                    Picnic en el jardín
-                </h3>
-                <p>
-                    Disfrute de un almuerzo especial junto al Río Urubamba. Comience con unos sabrosos bocadillos, luego
-                    continúe con una variedad de platos con ingredientes locales, incluyendo de nuestro propio huerto.
-                    Previa reserva con 24 horas de anticipación. Para grupos de mínimo 2 y máximo 14 personas.
-                </p>
-                <div class="text-center">
-                    <a href="#"
-                        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">PÓNGASE
-                        EN CONTACTO CON NOSOTROS</a>
-                </div>
-            </section>
-        </section>
-        <section class="row elements">
-            <img src="/src/img/webp/Actividades/pachamama.jpg" class="col-12 col-md-6 elements-img" alt="pachamama">
-            <section class="content col-12 col-md-6">
-                <h3>
-                    Pachamama
-                </h3>
-                <p>
-                    Únase a nosotros para una ceremonia de ofrenda sagrada, que le acercará a la naturaleza y
-                    rejuvenecerá su espíritu. <br>
-                    Un chamán andino será tu guía mientras das gracias a la Madre Tierra por la vida que te da. <br>
-                    Reserve con 48 horas de anticipación. Sujeto a condiciones meteorológicas. Para grupos de 2 a más
-                    personas.
-                </p>
+      </section>
+      <section class="row elements">
+        <img
+          src="/src/img/webp/Actividades/pachamama.jpg"
+          class="col-12 col-md-6 elements-img"
+          alt="pachamama"
+        />
+        <section class="content col-12 col-md-6">
+          <h3>Pachamama</h3>
+          <p>
+            Únase a nosotros para una ceremonia de ofrenda sagrada, que le
+            acercará a la naturaleza y rejuvenecerá su espíritu. <br />
+            Un chamán andino será tu guía mientras das gracias a la Madre Tierra
+            por la vida que te da. <br />
+            Reserve con 48 horas de anticipación. Sujeto a condiciones
+            meteorológicas. Para grupos de 2 a más personas.
+          </p>
 
-                <div class="text-center">
-                    <a href="#"
-                        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">PÓNGASE
-                        EN CONTACTO CON NOSOTROS</a>
-                </div>
-            </section>
+          <div class="text-center">
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >PÓNGASE EN CONTACTO CON NOSOTROS</a
+            >
+          </div>
         </section>
-        <section class="row elements">
-            <img src="/src/img/webp/Actividades/cabalgata.jpg" class="col-12 col-md-6 order-sm-1 order-md-2 elements-img"
-                alt="cabalgata">
-            <section class="content-r col-12 col-md-6 order-sm-2 order-md-1">
-                <h3>
-                    Cabalgata por el Valle Sagrado
-                </h3>
-                <p>
-                    Monte en una pintoresca cabalgata a través de bosques nativos, pastos y arroyos, visitando las
-                    comunidades locales a lo largo del camino y, al final del viaje, una magnífica cascada.
-                </p>
-                <p>
-                    Tour privado. Previa reserva con al menos 24 horas de anticipación. Para grupos de mínimo 1 y máximo
-                    6 personas. Sujeto a condiciones climáticas.
-                </p>
-                <div class="text-center">
-                    <a href="#"
-                        class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover">PÓNGASE
-                        EN CONTACTO CON NOSOTROS</a>
-                </div>
-
-            </section>
-
+      </section>
+      <section class="row elements">
+        <img
+          src="/src/img/webp/Actividades/cabalgata.jpg"
+          class="col-12 col-md-6 order-sm-1 order-md-2 elements-img"
+          alt="cabalgata"
+        />
+        <section class="content-r col-12 col-md-6 order-sm-2 order-md-1">
+          <h3>Cabalgata por el Valle Sagrado</h3>
+          <p>
+            Monte en una pintoresca cabalgata a través de bosques nativos,
+            pastos y arroyos, visitando las comunidades locales a lo largo del
+            camino y, al final del viaje, una magnífica cascada.
+          </p>
+          <p>
+            Tour privado. Previa reserva con al menos 24 horas de anticipación.
+            Para grupos de mínimo 1 y máximo 6 personas. Sujeto a condiciones
+            climáticas.
+          </p>
+          <div class="text-center">
+            <a
+              href="#"
+              class="link-dark link-offset-2 link-underline-opacity-25 link-underline-opacity-100-hover"
+              >PÓNGASE EN CONTACTO CON NOSOTROS</a
+            >
+          </div>
         </section>
-        <div class="container-fluid">
-            <div class="row justify-content-center">
-                <div class="col-12 col-md-10">
-                    <hr />
-                    <footer class="pt-4 my-md-5 pt-md-5">
-                        <div class="footer-container">
-                            <div class="row text-center text-md-start">
-                                <div class="col-12 col-md-6 mb-3 mb-md-0">
-                                    <h5>PIEDRA LUNA RESORT</h5>
-                                    <p class="fw-bold mb-1">LLÁMANOS AL</p>
-                                    <p class="mb-3">(01) 348-0687</p>
-                                    <p class="fw-bold mb-1">Calle Enrique Palacios 1072</p>
-                                    <p>Miraflores. Lima, Peru</p>
-                                    <div class="footer-icons d-flex justify-content-center justify-content-md-start">
-                                        <a href="#"
-                                            class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
-                                            style="width: 40px; height: 40px"><i class="fab fa-facebook-f"></i></a>
-                                        <a href="#"
-                                            class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
-                                            style="width: 40px; height: 40px"><i class="fab fa-x-twitter"></i></a>
-                                        <a href="#"
-                                            class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
-                                            style="width: 40px; height: 40px"><i class="fab fa-instagram"></i></a>
-                                        <a href="#"
-                                            class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
-                                            style="width: 40px; height: 40px"><i class="fab fa-spotify"></i></a>
-                                        <a href="#"
-                                            class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
-                                            style="width: 40px; height: 40px"><i class="fab fa-tiktok"></i></a>
-                                        <a href="#"
-                                            class="d-flex align-items-center justify-content-center rounded-circle border border-dark"
-                                            style="width: 40px; height: 40px"><i class="fab fa-whatsapp"></i></a>
-                                    </div>
-                                </div>
-                                <div class="footer-newsletter col-12 col-md-6">
-                                    <h5>SUSCRÍBASE A LAS NEWSLETTER</h5>
-                                    <div class="input-group">
-                                        <input type="email" class="form-control" placeholder="introduce tu e-mail" />
-                                        <button class="btn btn-outline-secondary" type="button">
-                                            <i class="fas fa-arrow-right"></i>
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </footer>
-                    <hr />
-                    <div class="footer-copy text-center">
-                        <p>&copy; PIEDRA LUNA RESORT 2024</p>
+      </section>
+      <div class="container-fluid">
+        <div class="row justify-content-center">
+          <div class="col-12 col-md-10">
+            <hr />
+            <footer class="pt-4 my-md-5 pt-md-5">
+              <div class="footer-container">
+                <div class="row text-center text-md-start">
+                  <div class="col-12 col-md-6 mb-3 mb-md-0">
+                    <h5>PIEDRA LUNA RESORT</h5>
+                    <p class="fw-bold mb-1">LLÁMANOS AL</p>
+                    <p class="mb-3">(01) 348-0687</p>
+                    <p class="fw-bold mb-1">Calle Enrique Palacios 1072</p>
+                    <p>Miraflores. Lima, Peru</p>
+                    <div
+                      class="footer-icons d-flex justify-content-center justify-content-md-start"
+                    >
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
+                        style="width: 40px; height: 40px"
+                        ><i class="fab fa-facebook-f"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
+                        style="width: 40px; height: 40px"
+                        ><i class="fab fa-x-twitter"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
+                        style="width: 40px; height: 40px"
+                        ><i class="fab fa-instagram"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
+                        style="width: 40px; height: 40px"
+                        ><i class="fab fa-spotify"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center rounded-circle border border-dark me-3"
+                        style="width: 40px; height: 40px"
+                        ><i class="fab fa-tiktok"></i
+                      ></a>
+                      <a
+                        href="#"
+                        class="d-flex align-items-center justify-content-center rounded-circle border border-dark"
+                        style="width: 40px; height: 40px"
+                        ><i class="fab fa-whatsapp"></i
+                      ></a>
                     </div>
+                  </div>
+                  <div class="footer-newsletter col-12 col-md-6">
+                    <h5>SUSCRÍBASE A LAS NEWSLETTER</h5>
+                    <div class="input-group">
+                      <input
+                        type="email"
+                        class="form-control"
+                        placeholder="introduce tu e-mail"
+                      />
+                      <button class="btn btn-outline-secondary" type="button">
+                        <i class="fas fa-arrow-right"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
+              </div>
+            </footer>
+            <hr />
+            <div class="footer-copy text-start">
+              <p>&copy; PIEDRA LUNA RESORT 2024</p>
             </div>
+          </div>
         </div>
+      </div>
     </main>
 
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
-        crossorigin="anonymous"></script>
-</body>
-<style>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+  <style>
     /* Asegurar que la navbar se mantenga fija */
     .navbar {
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1030; /* Asegura que la navbar esté por encima de otros elementos */
-  }
-
-.container-fluid {
-margin-right: 50px;
-}
-
-@media (min-width: 768px) { /* md and up */
-    .container-fluid {
-      padding-left: 8%;
-      padding-right: 8%;
+      position: fixed;
+      top: 0;
+      width: 100%;
+      z-index: 1030; /* Asegura que la navbar esté por encima de otros elementos */
     }
-  }
-   </style>
+
+    .container-fluid {
+      margin-right: 50px;
+    }
+
+    @media (min-width: 768px) {
+      /* md and up */
+      .container-fluid {
+        padding-left: 8%;
+        padding-right: 8%;
+      }
+    }
+  </style>
 </html>
