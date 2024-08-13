@@ -74,10 +74,10 @@ a {
   position: relative;
   text-align: center;
   color: var(--white);
-  margin-top: 5%;
+  margin-top: 90px;
 }
 .banner img {
-  height: 50%;
+  height: 500px;
   width: 100%;
   object-fit: cover;
 }
@@ -93,7 +93,7 @@ a {
 
 /* Intro */
 .text-intro {
-  margin-top: 5%;
+  margin-top: 90px;
   margin-bottom: 10%;
 }
 /* Fin Intro */
