@@ -16,16 +16,16 @@ body {
 }
 
 h1,
-h2 {
-  font-family: 'Bodoni MT';
-  font-size: 64px;
-  text-align: center;
-}
-
 h3 {
   font-family: var(--titles);
   font-weight: 500;
   font-size: 2.4rem;
+}
+
+h2 {
+  font-family: 'Bodoni MT';
+  font-size: 64px;
+  text-align: center;
 }
 
 p {
@@ -89,6 +89,7 @@ a {
   height: 300px;
   width: 100%;
   object-fit: cover;
+  filter: brightness(50%);
 }
 
 .banner-text {
