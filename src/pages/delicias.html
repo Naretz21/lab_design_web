@@ -390,5 +390,24 @@
       crossorigin="anonymous"
     ></script>
     <!-- Fin Bootstrap JS, Popper.js, and jQuery -->
+       <!--js Button -->
+       <script>
+        window.onscroll = function () {
+          var scrollBtn = document.getElementById("scrollToTopBtn");
+          if (
+            document.body.scrollTop > 1000 ||
+            document.documentElement.scrollTop > 1000
+          ) {
+            scrollBtn.style.display = "block";
+          } else {
+            scrollBtn.style.display = "none";
+          }
+        };
+  
+        document.getElementById("scrollToTopBtn").onclick = function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+      </script>
+      <!-- Fin js Button -->
   </body>
 </html>

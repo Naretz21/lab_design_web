@@ -148,8 +148,8 @@
           
           <div class="container mt-5">
             <div class="row center">
-              <div class="col-sm-4">
-                <ul class="">
+              <div class="col-md-6 mx-auto d-flex justify-content-center">
+                <ul>
                   <li class="mb-2">Dos salas de tratamiento individual</li>
                   <li class="mb-2">Sala de tratamiento para parejas</li>
                   <li class="mb-2">Jacuzzi interior y exterior</li>
@@ -160,7 +160,7 @@
             </div>
             <br>
             <br>
-            <div class="col-sm-4">
+            <div class="col-md-6 mx-auto  d-flex justify-content-start">
                 <ul class="">
                   <li class="mb-2">Abierto todos los días de 12:00 p.m. a 9:00 p.m.</li>
                   <li class="mb-2">Cel.: (+51) 999 959 777</li>
@@ -218,9 +218,64 @@
 </div>
 </section>
 
+
+
+<section>
+  <div class="slider">
+    <div class="slider-track">
+      <div class="slide">
+        <img src="/src/img/webp/Spa/carrusel.1.jpg" alt="">
+      </div>
+        <div class="slide">
+          <img src="/src/img/webp/Spa/carrusel.2.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="/src/img/webp/Spa/carrusel.3.jpg" alt="">
+        </div>
+        <div class="slide">
+          <img src="/src/img/webp/Spa/carrusel.4.jpg" alt="">
+        </div>
+       
+        <div class="slide">
+          <img src="/src/img/webp/Spa/carrusel.1.jpg" alt="">
+        </div>
+          <div class="slide">
+            <img src="/src/img/webp/Spa/carrusel.2.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="/src/img/webp/Spa/carrusel.3.jpg" alt="">
+          </div>
+          <div class="slide">
+            <img src="/src/img/webp/Spa/carrusel.4.jpg" alt="">
+          </div>
+        
+      
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
     
     <div class="container massage-section">
         <div class="row">
+
+          <div class="col-md-6">
+            <img src="/src/img/webp/Spa/yoga.jpg" alt="Masaje Killa" class="massage-image">
+        </div>
+
             <div class="col-md-6 d-flex align-items-center">
                 <div class="massage-content">
                     <h3>experiencia exclusiva</h3>
@@ -228,9 +283,7 @@
                     <p>Disfrute lo mejor de ambos mundos con este exclusivo masaje estilo libre. Una mezcla de tres técnicas relajan los músculos: sueca, de tejido profundo y de digitopresión. Un tratamiento complementario de pies con eucalipto lo conecta una vez más con la Madre Tierra.</p>
                 </div>
             </div>
-            <div class="col-md-6">
-                <img src="/src/img/webp/Spa/Masajes.jpg" alt="Masaje Killa" class="massage-image">
-            </div>
+            
         </div>
     </div>
 
@@ -333,7 +386,26 @@
           integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
           crossorigin="anonymous"
         ></script>
-        <!-- Fin Bootstrap JS, Popper.js, and jQuery -->
+      <!-- Fin Bootstrap JS, Popper.js, and jQuery -->
+       <!--js Button -->
+       <script>
+        window.onscroll = function () {
+          var scrollBtn = document.getElementById("scrollToTopBtn");
+          if (
+            document.body.scrollTop > 1000 ||
+            document.documentElement.scrollTop > 1000
+          ) {
+            scrollBtn.style.display = "block";
+          } else {
+            scrollBtn.style.display = "none";
+          }
+        };
+  
+        document.getElementById("scrollToTopBtn").onclick = function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+      </script>
+      <!-- Fin js Button -->
 </body>
 
 </html>
