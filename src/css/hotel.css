@@ -1,38 +1,36 @@
 /* Estilos Generales */
 :root {
-    --titles: "Bodoni Moda", serif;
-    --enlaces: "Cabin", sans-serif;
-    --parrafos: "Inter", sans-serif;
-    --black: #000000;
-    --white: #fff;
-    --grey: #969696;
-    --grey2: #d9d9d9;
-    --background: #f0f0f0;
-  }
-  body {
-    margin: 0;
-    font-family: var(--parrafos);
-  }
-  h1,
-  h2 {
-    font-family: var(--titles);
-    font-weight: 500;
-    font-size: 2.4rem;
-  }
-  h3 {
-    font-family: var(--enlaces);
-    margin-top: 50px;
-  }
-  p {
-    font-family: var(--parrafos);
-  }
-  a {
-    font-family: var(--enlaces);
-  }
-  /* Fin Estilos Generales */
-  
- 
-  
+  --titles: "Bodoni Moda", serif;
+  --enlaces: "Cabin", sans-serif;
+  --parrafos: "Inter", sans-serif;
+  --black: #000000;
+  --white: #fff;
+  --grey: #969696;
+  --grey2: #d9d9d9;
+  --background: #f0f0f0;
+}
+body {
+  margin: 0;
+  font-family: var(--parrafos);
+}
+h1,
+h2 {
+  font-family: var(--titles);
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+h3 {
+  font-family: var(--enlaces);
+  margin-top: 50px;
+}
+p {
+  font-family: var(--parrafos);
+}
+a {
+  font-family: var(--enlaces);
+}
+/* Fin Estilos Generales */
+
 /* Navbar */
 
 .navbar li {
@@ -64,95 +62,116 @@
 }
 
 /* Fin Navbar */
-  
+
 /* Banner */
 .banner {
-    position: relative;
-    text-align: center;
-    color: var(--white);
-    margin-top: 5%;
-  }
-  .banner img {
-    height: 50%;
-    width: 100%;
-    object-fit: cover;
-  }
-  .banner-text {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    padding: 20px;
-    border-radius: 10px;
-  }
-  /* Fin Banner */
-
+  position: relative;
+  text-align: center;
+  color: var(--white);
+  margin-top: 90px;
+}
+.banner img {
+  height: 50%;
+  width: 100%;
+  object-fit: cover;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+}
+/* Fin Banner */
 
 /* Intro */
-.img-intro img{
-    margin-top: 5%;
-    
+.img-intro img {
+  margin-top: 5%;
 }
 
 .text-intro {
-    margin-top: 5%;
-    margin-bottom: 10%;
-    text-align: justify;
+  margin-top: 5%;
+  margin-bottom: 10%;
+  text-align: justify;
+}
+/* Fin Intro */
+
+/* Section cards */
+
+.card-hotel-text,
+.card-hotel-text-2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 5% 5%;
+  width: 85%;
+  margin-inline: auto;
+  position: relative;
+  text-align: center;
+}
+
+.card-hotel-text hr,
+.card-hotel-text-2 hr {
+  width: 100%;
+  margin-bottom: 0 auto;
+}
+
+.card-hotel-text h3,
+.card-hotel-text-2 h3 {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+
+.card-hotel-text {
+  margin-top: -6%; 
+}
+
+.card-hotel-text-2 {
+  margin-top: -8%;
+}
+
+@media (max-width: 767.98px) {
+  .card-hotel-text {
+    margin-top: -8%;
   }
-  /* Fin Intro */
+}
 
 
 
+/* Fin Section cards */
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-  /* Footer */
+/* Footer */
 .footer-icons i {
-    color: var(--black);
+  color: var(--black);
+}
+.footer-copy p {
+  color: var(--grey);
+  font-family: var(--parrafos);
+}
+.footer-container h5 {
+  font-family: var(--titles);
+  font-weight: bolder;
+}
+.footer-newsletter .form-control::placeholder {
+  color: var(--grey);
+  font-style: italic;
+  font-family: var(--enlaces);
+  letter-spacing: 1px;
+}
+.no-decoration {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footermar {
+    padding-left: 1% !important;
+    padding-right: 1% !important;
   }
-  .footer-copy p {
-    color: var(--grey);
-    font-family: var(--parrafos);
-  }
-  .footer-container h5 {
-    font-family: var(--titles);
-    font-weight: bolder;
-  }
-  .footer-newsletter .form-control::placeholder {
-    color: var(--grey);
-    font-style: italic;
-    font-family: var(--enlaces);
-    letter-spacing: 1px;
-  }
-  .no-decoration {
-    text-decoration: none;
-  }
-  
-  @media (max-width: 768px) {
-    .footermar{
-      padding-left: 1% !important;
-      padding-right: 1% !important;
-    }
-  }
-  
-  .footermar{
-    z-index: 1000;
-  }
-  /* Fin Footer */
+}
+
+.footermar {
+  z-index: 1000;
+}
+/* Fin Footer */
