@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <style>
+        .carousel-container {
+        position: relative;
+        width: 100%;
+        margin: 0 auto;
+        overflow: hidden;
+}
+
+.carousel {
+    display: flex;
+    width: 200%; /* Adjusted to fit both sets of images */
+    transition: transform 0.5s ease-in-out;
+}
+
+.carousel-item {
+    display: flex;
+    width: 50%; /* Half of the total width */
+    flex-shrink: 0;
+}
+
+.carousel-item img {
+  width: 20%; /* Each image takes up 20% of the carousel item width */
+}
+
+input[name="carousel"] {
+    display: none;
+}
+
+#carousel-1:checked ~ .carousel {
+    transform: translateX(0);
+}
+
+#carousel-2:checked ~ .carousel {
+    transform: translateX(-50%);
+}
+
+.carousel-controls {
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(-50%);
+}
+
+.carousel-controls label {
+    background-color: rgba(0, 0, 0, 0.5);
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    border-radius: 50%;
+}
+    </style>
+</head>
+<body>
+
+
+    <div class="carousel-container">
+        <input type="radio" name="carousel" id="carousel-1" checked>
+        <input type="radio" name="carousel" id="carousel-2">
+        <input type="radio" name="carousel" id="carousel-3">
+        
+        <div class="carousel">
+            <div class="carousel-item" id="item-1">
+            <img src="/src/img/webp/Spa/carrusel.1.jpg" alt="Image 1">
+            <img src="/src/img/webp/Spa/carrusel.2.jpg" alt="Image 2">
+            <img src="/src/img/webp/Spa/carrusel.3.jpg" alt="Image 3">
+            <img src="/src/img/webp/Spa/carrusel.4.jpg" alt="Image 4">
+            <img src="/src/img/webp/Spa/carrusel.5.jpg" alt="Image 5">
+            </div>
+            <div class="carousel-item" id="item-2">
+            <img src="/src/img/webp/Spa/carrusel.1.jpg" alt="Image 3">
+            <img src="/src/img/webp/Spa/carrusel.2.jpg" alt="Image 4">
+            <img src="/src/img/webp/Spa/carrusel.3.jpg" alt="Image 5">
+            <img src="/src/img/webp/Spa/carrusel.4.jpg" alt="Image 6">
+            <img src="/src/img/webp/Spa/carrusel.5.jpg" alt="Image 7">
+            </div>
+        </div>
+
+        <div class="carousel-controls">
+        <label for="carousel-1" class="prev">&#10094;</label>
+        <label for="carousel-2" class="next">&#10095;</label>
+        </div>
+    </div>
+
+    
+
+
+
+</body>
+</html>
