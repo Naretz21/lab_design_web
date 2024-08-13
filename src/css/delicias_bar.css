@@ -1,11 +1,71 @@
-body{
-    background-color: white;
+/* Estilos Generales */
+:root {
+    --titles: "Bodoni Moda", serif;
+    --enlaces: "Cabin", sans-serif;
+    --parrafos: "Inter", sans-serif;
+    --black: #000000;
+    --white: #fff;
+    --grey: #969696;
+    --grey2: #d9d9d9;
+    --background: #f0f0f0;
+  }
+  body {
+    margin: 0;
+    font-family: var(--parrafos);
+  }
+  h1,
+  h2 {
+    font-family: var(--titles);
+    font-weight: 500;
+    font-size: 2.4rem;
+  }
+  h3 {
+    font-family: var(--enlaces);
+    margin-top: 50px;
+  }
+  p {
+    font-family: var(--parrafos);
+  }
+  a {
+    font-family: var(--enlaces);
+  }
+  /* Fin Estilos Generales */
+  
+ 
+  
+/* Navbar */
+
+.navbar li {
+  font-family: var(--enlaces);
+  font-size: 1.2rem;
+}
+.navbar .navbar-light {
+  position: fixed;
+  z-index: 1000;
 }
 
-h2
-{
-    font-size: 64;
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 1030 !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
+
+.container-fluid {
+  margin-right: 1% !important;
+}
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
+}
+
+/* Fin Navbar */
+  
+/* Banner */
 .banner{
     width: 100%;
     height: 300px;
@@ -27,3 +87,4 @@ h2
     color: white;
     text-transform: capitalize;
 }
+  /* Fin Banner */
