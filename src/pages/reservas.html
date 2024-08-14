@@ -7,74 +7,107 @@
     <title>Reservar</title>
     <link rel="stylesheet" href="/src/css/reservas.css">
     <link rel="icon" href="/src/img/icons/favicon.ico" type="image/x-icon" />
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous" />
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-        href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap"
-        rel="stylesheet" />
-
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+    crossorigin="anonymous"
+  />
+  <link
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+    rel="stylesheet"
+  />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400..900;1,6..96,400..900&family=Cabin:ital,wght@0,400..700;1,400..700&family=Inter:wght@100..900&display=swap"
+    rel="stylesheet"
+  />
 </head>
 
 <body class="ccontainer-fluid m-0 p-0">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-md fixed-top col-md-9 mx-auto bg-white navbar-light">
-        <div class="container-fluid">
-            <a class="navbar-brand order-2 order-md-1" href="/index.html">
-                <img src="/src/img/webp/Home/LOGO.jpg" alt="Logo" width="120" height="auto" />
-            </a>
-            <button class="navbar-toggler order-1 order-md-0" type="button" data-bs-toggle="offcanvas"
-                data-bs-target="#offcanvasNavbar" aria-controls="offcanvasNavbar">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse order-md-2 justify-content-end ms-3">
-                <ul class="navbar-nav mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./hotel.html">Hotel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./delicias.html">Restaurantes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./spa.html">Spa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./actividades.html">Actividades</a>
-                    </li>
-                </ul>
-            </div>
-            <button class="btn btn-secondary order-3 ms-3" type="button"
-                onclick="window.location.href='./reservas.html';">
-                Reservar
-            </button>
-        </div>
-        <div class="offcanvas offcanvas-start" tabindex="-1" id="offcanvasNavbar"
-            aria-labelledby="offcanvasNavbarLabel">
-            <div class="offcanvas-header">
-                <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
-                <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-            </div>
-            <div class="offcanvas-body d-md-none">
-                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                    <li class="nav-item">
-                        <a class="nav-link" href="./hotel.html">Hotel</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./delicias.html">Restaurantes</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./spa.html">Spa</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="./actividades.html">Actividades</a>
-                    </li>
-                </ul>
-            </div>
-        </div>
-    </nav>
-    <!-- end Navbar -->
+<!-- Navbar -->
+<nav
+class="navbar navbar-expand-md fixed-top col-md-9 mx-auto bg-white navbar-light"
+>
+<div class="container-fluid">
+  <a class="navbar-brand order-2 order-md-1" href="/index.html">
+    <img
+      src="/src/img/webp/Home/LOGO.jpg"
+      alt="Logo"
+      width="120"
+      height="auto"
+    />
+  </a>
+  <button
+    class="navbar-toggler order-1 order-md-0"
+    type="button"
+    data-bs-toggle="offcanvas"
+    data-bs-target="#offcanvasNavbar"
+    aria-controls="offcanvasNavbar"
+  >
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div
+    class="collapse navbar-collapse order-md-2 justify-content-end ms-3"
+  >
+    <ul class="navbar-nav mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="./hotel.html">Hotel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./delicias.html">Restaurantes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./spa.html">Spa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./actividades.html">Actividades</a>
+      </li>
+    </ul>
+  </div>
+  <button
+    class="btn btn-secondary order-3 ms-3"
+    type="button"
+    onclick="window.location.href='./reservas.html';"
+  >
+    Reservar
+  </button>
+</div>
+<div
+  class="offcanvas offcanvas-start"
+  tabindex="-1"
+  id="offcanvasNavbar"
+  aria-labelledby="offcanvasNavbarLabel"
+>
+  <div class="offcanvas-header">
+    <h5 class="offcanvas-title" id="offcanvasNavbarLabel">Menú</h5>
+    <button
+      type="button"
+      class="btn-close"
+      data-bs-dismiss="offcanvas"
+      aria-label="Close"
+    ></button>
+  </div>
+  <div class="offcanvas-body d-md-none">
+    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+      <li class="nav-item">
+        <a class="nav-link" href="./hotel.html">Hotel</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./delicias.html">Restaurantes</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./spa.html">Spa</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="./actividades.html">Actividades</a>
+      </li>
+    </ul>
+  </div>
+</div>
+</nav>
+<!-- end Navbar -->
 
     <!-- Banner  -->
     <div class="banner">
@@ -273,11 +306,34 @@
     </div>
     <!-- end Footer -->
 
-    <!-- Bootstrap JS, Popper.js, and jQuery -->
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
-    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
+       <!-- Bootstrap JS, Popper.js, and jQuery -->
+       <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+       <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
+       <script
+         src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+         integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+         crossorigin="anonymous"
+       ></script>
+     <!-- Fin Bootstrap JS, Popper.js, and jQuery -->
+       <!--js Button -->
+       <script>
+        window.onscroll = function () {
+          var scrollBtn = document.getElementById("scrollToTopBtn");
+          if (
+            document.body.scrollTop > 1000 ||
+            document.documentElement.scrollTop > 1000
+          ) {
+            scrollBtn.style.display = "block";
+          } else {
+            scrollBtn.style.display = "none";
+          }
+        };
+  
+        document.getElementById("scrollToTopBtn").onclick = function () {
+          window.scrollTo({ top: 0, behavior: "smooth" });
+        };
+      </script>
+      <!-- Fin js Button -->
 </body>
 
 </html>

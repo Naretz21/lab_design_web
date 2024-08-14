@@ -1,29 +1,171 @@
-body{
-    background-color: white;
+/* Estilos Generales */
+:root {
+  --titles: "Bodoni Moda", serif;
+  --enlaces: "Cabin", sans-serif;
+  --parrafos: "Inter", sans-serif;
+  --black: #000000;
+  --white: #fff;
+  --grey: #969696;
+  --grey2: #d9d9d9;
+  --background: #f0f0f0;
+}
+body {
+  margin: 0;
+  font-family: var(--parrafos);
+}
+h1,
+h2 {
+  font-family: var(--titles);
+  font-weight: 500;
+  font-size: 2.4rem;
+}
+h3 {
+  font-family: var(--enlaces);
+  margin-top: 50px;
+}
+.col-md-6 {
+  margin: 0 !important;
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+/* Fin Estilos Generales */
+
+p {
+  font-family: var(--parrafos);
+}
+a {
+  font-family: var(--enlaces);
 }
 
-h2
-{
-    font-size: 64;
+/* Navbar */
+
+.navbar li {
+  font-family: var(--enlaces);
+  font-size: 1.2rem;
 }
-.banner{
-    width: 100%;
-    height: 300px;
-    position: relative;
-    display: inline-block;
-    text-align: center;
-    margin: 0;
+.navbar .navbar-light {
+  position: fixed;
+  z-index: 1000;
 }
-.banner-img{
-    height: 300px;
-    width: 100%;
-    object-fit: cover;
+
+.navbar {
+  position: fixed !important;
+  top: 0 !important;
+  width: 100% !important;
+  z-index: 1030 !important;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.3);
 }
-.banner-text{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: white;
-    text-transform: capitalize;
+
+.container-fluid {
+  margin-right: 1% !important;
 }
+
+@media (min-width: 768px) {
+  .container-fluid {
+    padding-left: 8% !important;
+    padding-right: 8% !important;
+  }
+}
+
+/* Fin Navbar */
+
+/* Banner */
+.banner {
+  position: relative;
+  text-align: center;
+  color: var(--white);
+  margin-top: 90px;
+}
+.banner img {
+  height: 500px;
+  width: 100%;
+  object-fit: cover;
+}
+.banner-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 20px;
+  border-radius: 10px;
+}
+/* Fin Banner */
+
+
+
+
+
+
+
+
+.img-card-hotel {
+  z-index: 1;
+}
+
+.card-hotel-text-2 {
+  padding: 5% 5%;
+  position: absolute;
+  left: 0;
+  top: 50%;
+  text-align: center;
+  z-index: 2; 
+  width: 320px; 
+  height: 220px;
+  margin-right: -300px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Footer */
+.footer-icons i {
+  color: var(--black);
+}
+.footer-copy p {
+  color: var(--grey);
+  font-family: var(--parrafos);
+}
+.footer-container h5 {
+  font-family: var(--titles);
+  font-weight: bolder;
+}
+.footer-newsletter .form-control::placeholder {
+  color: var(--grey);
+  font-style: italic;
+  font-family: var(--enlaces);
+  letter-spacing: 1px;
+}
+.no-decoration {
+  text-decoration: none;
+}
+
+@media (max-width: 768px) {
+  .footermar{
+    padding-left: 1% !important;
+    padding-right: 1% !important;
+  }
+}
+
+/* Fin Footer */
