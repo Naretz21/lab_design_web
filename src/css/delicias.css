@@ -9,27 +9,31 @@
   --grey2: #d9d9d9;
   --background: #f0f0f0;
 }
+
 body {
   margin: 0;
   font-family: var(--parrafos);
 }
-
 
 h2 {
   font-family: var(--titles);
   font-weight: 500;
   font-size: 2.4rem;
 }
+
 h3 {
   font-family: var(--enlaces);
   margin-top: 50px;
 }
+
 p {
   font-family: var(--parrafos);
 }
+
 a {
   font-family: var(--enlaces);
 }
+
 /* Fin Estilos Generales */
 
 /* Navbar */
@@ -38,6 +42,7 @@ a {
   font-family: var(--enlaces);
   font-size: 1.2rem;
 }
+
 .navbar .navbar-light {
   position: fixed;
   z-index: 1000;
@@ -91,20 +96,21 @@ a {
 }
 
 .banner-text {
-  
+
   position: absolute;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 20px;
-  z-index: 2; 
+  z-index: 2;
 }
 
-.banner-text h1{
+.banner-text h1 {
   font-family: var(--enlaces);
   font-weight: bold;
-  font-size: 4rem ;
+  font-size: 4rem;
 }
+
 /* Fin Banner */
 
 /* Intro */
@@ -112,20 +118,29 @@ a {
   margin-top: 90px;
   margin-bottom: 10%;
 }
+
 /* Fin Intro */
 
 /* Sections */
 .content-section {
   padding: 0;
 }
+
 .content-section h2 {
   text-align: center;
   margin-bottom: 40px;
 }
+
 .text-section {
   padding: 10%;
 }
+
 .img-fluid {
+  width: 100%;
+  height: auto;
+}
+
+.img-fluid-2 {
   max-width: 100dvh;
   height: auto;
 }
@@ -135,36 +150,42 @@ a {
 .text-card {
   margin-top: 20px;
 }
-.container-exp{
+
+.container-exp {
   margin-top: 10%;
   margin-bottom: 5%;
 }
+
 /* Fin Experiencias */
 
 /* Footer */
 .footer-icons i {
   color: var(--black);
 }
+
 .footer-copy p {
   color: var(--grey);
   font-family: var(--parrafos);
 }
+
 .footer-container h5 {
   font-family: var(--titles);
   font-weight: bolder;
 }
+
 .footer-newsletter .form-control::placeholder {
   color: var(--grey);
   font-style: italic;
   font-family: var(--enlaces);
   letter-spacing: 1px;
 }
+
 .no-decoration {
   text-decoration: none;
 }
 
 @media (max-width: 768px) {
-  .footermar{
+  .footermar {
     padding-left: 1% !important;
     padding-right: 1% !important;
   }
@@ -181,5 +202,6 @@ a {
   z-index: 100;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
+
 /* 
 Fin Scroll top button */
