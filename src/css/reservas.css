@@ -130,7 +130,7 @@ a {
 }
 
 .img-fluid {
-  max-width: 100dvh;
+  width: 100%;
   height: auto;
 }
 
