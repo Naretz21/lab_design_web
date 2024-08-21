@@ -21,7 +21,7 @@ h2 {
   font-size: 2.4rem;
 }
 h3 {
-  font-family: var(--enlaces);
+  font-family: var(--titles);
   margin-top: 50px;
 }
 p {
